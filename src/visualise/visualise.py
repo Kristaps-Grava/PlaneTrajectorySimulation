@@ -1,3 +1,9 @@
+# Visualisation class that is responsible for plotting trajectories
+#
+# November 2025
+# Kristaps Grava (c)
+
+
 import matplotlib.pyplot as plt
 
 class Visualise:

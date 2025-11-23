@@ -1,7 +1,15 @@
+# Physics class that is responsible for calculating forces and
+# applying the equations of motion
+#
+# November 2025
+# Kristaps Grava (c)
+
+
 import numpy as np
 from math import sin, cos
 import config
 import math
+
 
 class Physics:
   def __init__(self, launch_angle):
