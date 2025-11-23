@@ -1,47 +1,17 @@
 import matplotlib.pyplot as plt
 
-
 class Visualise:
   def __init__(self):
-    self.x_history0 = []
-    self.y_history0 = []
-    self.x_history1 = []
-    self.y_history1 = []
-    self.x_history2 = []
-    self.y_history2 = []
-    self.x_history3 = []
-    self.y_history3 = []
-    self.x_history4 = []
-    self.y_history4 = []
+    pass
 
-  def add_position0(self, x, y):
-    self.x_history0.append(x)
-    self.y_history0.append(y)
-
-  def add_position1(self, x, y):
-    self.x_history1.append(x)
-    self.y_history1.append(y)
-
-  def add_position2(self, x, y):
-    self.x_history2.append(x)
-    self.y_history2.append(y)
-
-  def add_position3(self, x, y):
-    self.x_history3.append(x)
-    self.y_history3.append(y)
-
-  def add_position4(self, x, y):
-    self.x_history4.append(x)
-    self.y_history4.append(y)
-
-  def plot_trajectory(self):
+  def plot_trajectory(self, sim1_x, sim1_y, sim2_x, sim2_y, sim3_x, sim3_y, sim4_x, sim4_y, sim5_x, sim5_y):
 
     plt.figure(figsize=(6, 6))
-    plt.plot(self.x_history0, self.y_history0, marker='o', label="0 deg")
-    plt.plot(self.x_history1, self.y_history1, marker='o', label="5 deg")
-    plt.plot(self.x_history2, self.y_history2, marker='o', label="10 deg")
-    plt.plot(self.x_history3, self.y_history3, marker='o', label="15 deg")
-    plt.plot(self.x_history4, self.y_history4, marker='o', label="20 deg")
+    plt.plot(sim1_x, sim1_y, marker='o', label="0 deg")
+    plt.plot(sim2_x, sim2_y, marker='o', label="5 deg")
+    plt.plot(sim3_x, sim3_y, marker='o', label="10 deg")
+    plt.plot(sim4_x, sim4_y, marker='o', label="15 deg")
+    plt.plot(sim5_x, sim5_y, marker='o', label="20 deg")
     plt.xlabel("X position")
     plt.ylabel("Y position")
     plt.title("Trajectory")
